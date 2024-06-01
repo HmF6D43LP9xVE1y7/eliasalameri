@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Tim Ott">
+        <meta name="copyright" content="Elias Al Ameri">
+        <meta name="language" content="English">
+        <meta name="revisit-after" content="7 days">
+        <meta name="robots" content="index, nofollow, noimageindex">
+        <meta name="googlebot" content="index, nofollow, noimageindex">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/png" href="assets/asset_favicon.png">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.min.css">
+
+        <meta name="title" content="Architekturfotograf mit Sitz in der Schweiz">
+        <meta name="description" content="Vom Architekturmodell, über regelmässige Baustellenaufnahmen, bis hin zur umfassenden Schlussdokumentation freue ich mich auf eine Zusammenarbeit um Ihre Arbeiten nach klaren Vorgaben oder eigener Interpretation, authentisch und zeitlos festzuhalten. In der gesamten Schweiz sowie dem angrenzenden Ausland für Ihre Aufträge verfügbar.">
+        <meta name="keywords" content="Tim Ott, timott, timott.ch, Architekturfotograf, Architekturfotografie, Architektur, architecture, architectural photographer, Schweiz, switzerland">
+        <!--
+        <meta name="google-site-verification" content=""> -->
+        <meta property="og:type" content="website">
+
+        <meta property="og:site_name" content="Architekturfotograf mit Sitz in der Schweiz"/>
+        <meta property="og:url" content="https://alamerielias.com">
+        <meta property="og:image:type" content="image/jpeg">
+        <!--
+        <meta property="og:image" content="https://timott.ch/assets/asset_006b.jpg">
+        <meta property="og:image:secure_url" content="https://timott.ch/assets/asset_006b.jpg"> -->
+        <meta property="og:image:width" content="1400">
+        <meta property="og:image:height" content="1000">
+
+        <meta property="og:title" content="Architekturfotograf mit Sitz in der Schweiz">
+        <meta property="og:description" content="Vom Architekturmodell, über regelmässige Baustellenaufnahmen, bis hin zur umfassenden Schlussdokumentation freue ich mich auf eine Zusammenarbeit um Ihre Arbeiten nach klaren Vorgaben oder eigener Interpretation, authentisch und zeitlos festzuhalten. In der gesamten Schweiz sowie dem angrenzenden Ausland für Ihre Aufträge verfügbar.">
+
+        <meta property="twitter:card" content="summary_large_image">
+
+        <meta property="twitter:url" content="https://alamerielias.com">
+        <meta property="twitter:title" content="Architekturfotograf mit Sitz in der Schweiz">
+        <meta property="twitter:description" content="Vom Architekturmodell, über regelmässige Baustellenaufnahmen, bis hin zur umfassenden Schlussdokumentation freue ich mich auf eine Zusammenarbeit um Ihre Arbeiten nach klaren Vorgaben oder eigener Interpretation, authentisch und zeitlos festzuhalten. In der gesamten Schweiz sowie dem angrenzenden Ausland für Ihre Aufträge verfügbar.">
+        <!--
+        <meta property="twitter:image" content="https://timott.ch/assets/asset_006b.jpg"> -->
+        <title>
+            Elias Al Ameri
+        </title>
+    </head>
+    <body oncontextmenu="return false" onclick="cycle();">
+        <label class="nav font underline" onclick="overlay();" for="checkBox">
+            Elias Al Ameri
+            <input type="checkbox" id="checkBox">
+        </label>
+        <script>
+            function overlay() {
+                var checkBox = document.querySelector('#checkBox');
+                var lightbox = document.querySelector('.lightbox');
+                var overlay = document.querySelector('.overlay');
+                if (checkBox.checked == true) {
+                    lightbox.style.pointerEvents= 'none';
+                    overlay.style.opacity = '1';
+                } else {
+                    lightbox.style.pointerEvents= 'all';
+                    overlay.style.opacity = '0';
+                }
+            }
+        </script>
+        <div class="lightbox" onkeydown="cycle();">
+            <img class="lightboxSrc" src="" title="&#169; Elias Al Ameri" alt="&#169; Elias Al Ameri">
+        </div>
+        <div class="overlay">
+            <div class="font center">
+                photographer / artist
+                <br><br>
+                My name is Elias Al-Ameri. I come from switzerland and Iraq and I'm a passionate artist and fashion photograper. I successfully completed my Swiss Certificate of Competence as a photographer EFZ at the School of Art and Design Zurich, Switzerland.
+                <br>
+                I have a lot of creative practices. I am interested in all kinds of different art forms like visual arts as in sculptures, paintings and fashion design. My life is a constant creative process. New creative concepts are always welcome.
+                <br><br>
+                Mein Name ist Elias Al-Ameri. Ich komme aus der Schweiz und dem Irak, bin ein leidenschaftlicher Künstler und Modefotograf und habe an der Schule für Kunst und Design in Zürich das Eidgenössische Fähigkeitszeugnis als Fotograf EFZ erfolgreich abgeschlossen.
+                <br>
+                Ich habe viele kreative Tätigkeiten. Ich interessiere mich für alle möglichen Kunstformen. Visuelle Künste wie Skulpturen, Gemälde und Modedesign. Mein Leben ist ein ständiger kreativer Prozess. Neue kreative Konzepte sind immer willkommen.
+                <br><br>
+                اسمي إلياس العامري. أنا من سويسرا والعراق، وأنا فنان ومصور أزياء شغوف، وقد أكملت بنجاح شهادة الكفاءة الفيدرالية كمصور  فوتوغرافي في مدرسة الفنون والتصميم في زيورخ سويسرا
+                <br>
+                لدي العديد من الأنشطة الإبداعية. أنا مهتم بجميع أشكال الفنون الممكنة، مثل الفنون البصرية كالتماثيل واللوحات وتصميم الأزياء. حياتي عباره عن عملية إبداعية مستمرة. مشاريع  المفاهيم الإبداعية الجديدة دائماً مرحب بها
+                <br><br>
+                <div id="mail" onclick="mail();">
+                </div>
+                <a href="https://www.instagram.com/alamerielias" target="_blank" rel="noopener noreferrer">
+                    @alamerielias
+                </a>
+            </div>
+        </div>
+        <script src="js/contact.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/preventDrag.min.js"></script>
+    </body>
+</html>
