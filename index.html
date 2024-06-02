@@ -40,7 +40,7 @@
             Elias Al Ameri
         </title>
     </head>
-    <body oncontextmenu="return false" onclick="cycle();">
+    <body oncontextmenu="return false">
         <label class="nav font underline" onclick="overlay();" for="checkBox">
             Elias Al Ameri
             <input type="checkbox" id="checkBox">
@@ -51,11 +51,11 @@
                 const lightbox = document.querySelector('.lightbox');
                 const overlay = document.querySelector('.overlay');
                 if (checkBox.checked == true) {
-                    lightbox.style.pointerEvents= 'none';
-                    overlay.style.opacity = '1';
+                    lightbox.removeAttribute('onclick', 'cycle()');
+                    overlay.style.display = 'block';
                 } else {
-                    lightbox.style.pointerEvents= 'all';
-                    overlay.style.opacity = '0';
+                    lightbox.setAttribute('onclick', 'cycle()');
+                    overlay.style.display = 'none';
                 }
             }
         </script>
